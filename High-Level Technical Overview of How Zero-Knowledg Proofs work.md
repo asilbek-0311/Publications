@@ -56,9 +56,9 @@ Artihmetastion is a process of turning a real life problems intro an arithmetic 
 <aside>
 📎
 
-Here is a note why do we need arithmetization. Zero-knowledge (ZK) cryptography works by using algebraic equations, polynomials, and constraint systems to prove statements without revealing data. To use it in real life, we need to turn the actual problem into a mathematical problem, and that’s where we use a process called arithmetization.
-
-This means expressing the computation as arithmetic circuits over finite fields, which general programming languages like Python or C++ often struggle with. And we use domain specific languages to write circuits.
+>Here is a note why do we need arithmetization. Zero-knowledge (ZK) cryptography works by using algebraic equations, polynomials, and constraint systems to prove statements without revealing data. To use it in real life, we need to turn the actual problem into a mathematical problem, and that’s where we use a process called arithmetization.
+> 
+>This means expressing the computation as arithmetic circuits over finite fields, which general programming languages like Python or C++ often struggle with. And we use domain specific languages to write circuits.
 
 </aside>
 
@@ -115,28 +115,28 @@ In a nutshell, this is a bigger picture of how ZKPs work. There might be a lot o
 <aside>
 📎
 
-**Circuit**
-A circuit in zk is a mathematical representation of a computation using basic arithmetic gates (addition, multiplication, etc.).  In my opinion It's called a circuit because it's conceptually similar to an electronic circuit, where:
-
-- **Inputs** go into **gates** (like AND, OR in logic circuits).
-- Each **gate** performs an operation.
-- The final **output** depends on the structured flow of operations.
+>**Circuit**
+>A circuit in zk is a mathematical representation of a computation using basic arithmetic gates (addition, multiplication, etc.).  In my opinion It's called a circuit because it's conceptually similar to an electronic circuit, where:
+> 
+> - **Inputs** go into **gates** (like AND, OR in logic circuits).
+> - Each **gate** performs an operation.
+> - The final **output** depends on the structured flow of operations.
 </aside>
 
 <aside>
 📎
 
-**Why Finite Field**
+> **Why Finite Field**
+>
+> Zero-knowledge cryptography works in **finite fields** for mathematical efficiency and security. You might think **Why Not Regular Numbers?** There are a few reasons:
+>
+> - Regular numbers grow too large for cryptographic operations.
+> - Floating-point numbers cause precision issues.
+> - Bitwise operations (used in CPU computation) do not map cleanly to algebraic circuits.
 
-Zero-knowledge cryptography works in **finite fields** for mathematical efficiency and security. You might think **Why Not Regular Numbers?** There are a few reasons:
-
-- Regular numbers grow too large for cryptographic operations.
-- Floating-point numbers cause precision issues.
-- Bitwise operations (used in CPU computation) do not map cleanly to algebraic circuits.
-
-And here is  **Why Finite Fields Work?**
-
-- **Modulo a prime** keeps numbers within a fixed size.
-- Arithmetic remains well-defined.
-- Operations become efficient when expressed as **modular polynomials**.
+> And here is  **Why Finite Fields Work?**
+>
+> - **Modulo a prime** keeps numbers within a fixed size.
+> - Arithmetic remains well-defined.
+> - Operations become efficient when expressed as **modular polynomials**.
 </aside>
